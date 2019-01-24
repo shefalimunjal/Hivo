@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Hivo
+
+    </string>
+    <string name="title_activity_filter">FilterActivity</string>
+
+    <string-array name="min_price">
+        <item>No Min</item>
+        <item>$50,000</item>
+        <item>$75,000</item>
+        <item>$1,00,000</item>
+        <item>$1,25,000</item>
+        <item>$1,50,000</item>
+        <item>$1,75,000</item>
+        <item>$2,00,000</item>
+        <item>$2,25,000</item>
+        <item>$2,50,000</item>
+        <item>$2,75,000</item>
+        <item>$3,00,000</item>
+        <item>$3,25,000</item>
+        <item>$3,50,000</item>
+        <item>$3,75,000</item>
+        <item>$4,00,000</item>
+        <item>$4,25,000</item>
+        <item>$4,50,000</item>
+        <item>$4,75,000</item>
+        <item>$5,00,000</item>
+        <item>$5,25,000</item>
+        <item>$5,50,000</item>
+        <item>$5,75,000</item>
+        <item>$6,00,000</item>
+        <item>$6,25,000</item>
+        <item>$6,50,000</item>
+        <item>$6,75,000</item>
+        <item>$2,00,000</item>
+        <item>$7,25,000</item>
+        <item>$7,50,000</item>
+        <item>$7,75,000</item>
+        <item>$8,00,000</item>
+        <item>$8,25,000</item>
+        <item>$8,50,000</item>
+        <item>$8,75,000</item>
+        <item>$9,00,000</item>
+        <item>$9,25,000</item>
+        <item>$9,50,000</item>
+        <item>$9,75,000</item>
+        <item>$10,00,000</item>
+    </string-array>
+
+    <string-array name="max_price">
+        <item>No Max</item>
+        <item>$10,00,000</item>
+        <item>$9,75,000</item>
+        <item>$9,50,000</item>
+        <item>$9,25,000</item>
+        <item>$9,00,000</item>
+        <item>$8,75,000</item>
+        <item>$8,50,000</item>
+        <item>$8,25,000</item>
+        <item>$8,00,000</item>
+        <item>$7,75,000</item>
+        <item>$7,50,000</item>
+        <item>$7,25,000</item>
+        <item>$7,00,000</item>
+        <item>$6,75,000</item>
+        <item>$6,50,000</item>
+        <item>$6,25,000</item>
+        <item>$6,00,000</item>
+        <item>$5,75,000</item>
+        <item>$5,50,000</item>
+        <item>$5,25,000</item>
+        <item>$5,00,000</item>
+        <item>$4,75,000</item>
+        <item>$4,50,000</item>
+        <item>$4,25,000</item>
+        <item>$4,00,000</item>
+        <item>$3,75,000</item>
+        <item>$3,50,000</item>
+        <item>$3,25,000</item>
+        <item>$3,00,000</item>
+        <item>$2,75,000</item>
+        <item>$2,50,000</item>
+        <item>$2,25,000</item>
+        <item>$2,00,000</item>
+        <item>$1,75,000</item>
+        <item>$1,50,000</item>
+        <item>$1,25,000</item>
+        <item>$1,00,000</item>
+        <item>$75,000</item>
+        <item>$50,000</item>
+    </string-array>
+
+    <string-array name="min_sqft">
+        <item>No Min</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+        <item>5500</item>
+        <item>6000</item>
+        <item>6500</item>
+        <item>7000</item>
+        <item>7500</item>
+        <item>8000</item>
+    </string-array>
+    <string-array name="max_sqft">
+        <item>No Max</item>
+        <item>8000</item>
+        <item>7500</item>
+        <item>7000</item>
+        <item>6500</item>
+        <item>6000</item>
+        <item>5500</item>
+        <item>5000</item>
+        <item>4500</item>
+        <item>4000</item>
+        <item>3500</item>
+        <item>3000</item>
+        <item>2500</item>
+        <item>2000</item>
+        <item>1500</item>
+        <item>1000</item>
+        <item>500</item>
+    </string-array>
+</resources>
+
+

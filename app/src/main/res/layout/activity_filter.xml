@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FilterActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/bath_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Bath"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bath_minus_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Bath" />
+
+
+
+    <TextView
+        android:id="@+id/sqft_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:text="Sqft"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sqft_any"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Sqft" />
+
+    <TextView
+        android:id="@+id/bed_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Beds"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/no_of_beds"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Beds" />
+
+    <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Price"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/price_any"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Price" />
+
+    <Spinner
+        android:id="@+id/price_max_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/price_tv"
+        app:layout_constraintTop_toTopOf="@+id/price_any" />
+
+    <Spinner
+        android:id="@+id/sqft_min_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sqft_tv"
+        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+    <Spinner
+        android:id="@+id/price_min_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price_tv"
+        app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+    <Spinner
+        android:id="@+id/sqft_max_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sqft_tv" />
+
+    <Button
+        android:id="@+id/bath_plus_btn"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/no_of_bath"
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        tools:text="+" />
+
+    <Button
+        android:id="@+id/bed_plus_btn"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/no_of_beds"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:text="+" />
+
+    <Button
+        android:id="@+id/bath_minus_btn"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/no_of_bath"
+        app:layout_constraintStart_toEndOf="@+id/bath_tv"
+        tools:text="-" />
+
+    <Button
+        android:id="@+id/bed_minus_btn"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/bed_tv"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:text="-" />
+
+    <EditText
+        android:id="@+id/no_of_bath"
+        android:layout_width="55dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Any"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bath_plus_btn"
+        app:layout_constraintStart_toEndOf="@+id/bath_minus_btn" />
+
+    <EditText
+        android:id="@+id/no_of_beds"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Any"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider10"
+        app:layout_constraintStart_toEndOf="@+id/bed_minus_btn" />
+
+
+
+    <TextView
+        android:id="@+id/price_any"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Any"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price_tv"
+        app:layout_constraintTop_toBottomOf="@+id/divider13"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <TextView
+        android:id="@+id/sqft_any"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Any"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sqft_tv"
+        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/apply_filter_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="344dp"
+        android:layout_height="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/apply_filter_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Apply Filters"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

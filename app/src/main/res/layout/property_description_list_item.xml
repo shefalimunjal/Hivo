@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="105dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/property_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="$7,75,000"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@id/divider1"
+        app:layout_constraintTop_toTopOf="@id/divider1" />
+
+
+    <TextView
+        android:id="@+id/property_address_line1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2781 Mauricia Ave"
+        android:textColor="@color/grey"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/property_address_line2_tv"
+        app:layout_constraintStart_toStartOf="@id/property_price_tv" />
+
+    <TextView
+        android:id="@+id/property_address_line2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Santa Clara, 95051"
+        android:textColor="@color/grey"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/divider1"
+        app:layout_constraintStart_toStartOf="@id/property_price_tv" />
+
+    <TextView
+        android:id="@+id/property_bed_no_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="5"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/property_price_tv" />
+
+    <TextView
+        android:id="@+id/property_beds_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginTop="4dp"
+        android:text="Beds"
+        android:textColor="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/property_bed_no_tv" />
+
+    <TextView
+        android:id="@+id/property_baths_no_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="3"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/property_bed_no_tv" />
+
+    <TextView
+        android:id="@+id/property_baths_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Baths"
+        android:textColor="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/property_baths_no_tv" />
+
+    <TextView
+        android:id="@+id/key_details"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:paddingBottom="12dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="12dp"
+        android:text="Key Details"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/divider3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/key_details" />
+
+    <TextView
+        android:id="@+id/sq_ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/sq_ft_value"
+        app:layout_constraintEnd_toEndOf="@id/divider2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/key_details" />
+
+    <TextView
+        android:id="@+id/sq_ft_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1,350"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintEnd_toEndOf="@id/divider2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/sq_ft" />
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/lot_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lot Size"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/lot_size_value"
+        app:layout_constraintEnd_toEndOf="@id/divider3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider3"
+        app:layout_constraintTop_toBottomOf="@+id/key_details" />
+
+    <TextView
+        android:id="@+id/lot_size_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5,650"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/divider5"
+        app:layout_constraintEnd_toEndOf="@id/divider3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider3"
+        app:layout_constraintTop_toBottomOf="@id/lot_size" />
+
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/property_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Type"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/property_type_value"
+        app:layout_constraintEnd_toEndOf="@id/divider4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider4"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/property_type_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Family"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintEnd_toEndOf="@id/divider4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider4"
+        app:layout_constraintTop_toBottomOf="@+id/property_type" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider4"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <TextView
+        android:id="@+id/built_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Built Year"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/built_year_value"
+        app:layout_constraintEnd_toEndOf="@id/divider5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/built_year_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1965"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider7"
+        app:layout_constraintEnd_toEndOf="@id/divider5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/built_year" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/divider7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+    <TextView
+        android:id="@+id/price_per_sq_ft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price/Sq. Ft"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/price_per_sq_ft_value"
+        app:layout_constraintEnd_toEndOf="@id/divider6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/price_per_sq_ft_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="765"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@id/divider4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/price_per_sq_ft"
+        app:layout_constraintBottom_toTopOf="@id/divider8"/>
+
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@id/divider5" />
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textColor="@color/grey"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/status_value"
+        app:layout_constraintEnd_toEndOf="@id/divider7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <TextView
+        android:id="@+id/status_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@id/divider7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/status_tv"
+        app:layout_constraintBottom_toTopOf="@id/divider9"/>
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/divider9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider6" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/divider8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider7" />
+
+
+    <!--<View-->
+    <!--android:id="@+id/divider8"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="75dp"-->
+    <!--app:layout_constraintWidth_default="percent"-->
+    <!--app:layout_constraintWidth_percent="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/divider6"-->
+    <!--android:padding="8dp"-->
+    <!--android:background="@android:color/holo_green_dark"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/price_sq_ft"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Price/Sq. ft"-->
+    <!--android:textSize="22dp"-->
+    <!--android:textColor="@color/grey"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintTop_toTopOf="@id/divider8"-->
+    <!--app:layout_constraintStart_toStartOf="@id/divider8"-->
+    <!--app:layout_constraintEnd_toEndOf="@id/divider8"/>-->
+    <!---->
+    <!--<View-->
+    <!--android:id="@+id/divider9"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="75dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:layout_marginLeft="4dp"-->
+    <!--app:layout_constraintWidth_default="percent"-->
+    <!--app:layout_constraintWidth_percent="0.5"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/divider7"-->
+    <!--android:padding="8dp"-->
+    <!--android:background="@android:color/holo_red_dark"/>-->
+    <!--<View-->
+    <!--android:id="@+id/divider10"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="75dp"-->
+    <!--app:layout_constraintWidth_default="percent"-->
+    <!--app:layout_constraintWidth_percent="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/divider8"-->
+    <!--android:padding="8dp"-->
+    <!---->
+    <!--android:background="@android:color/holo_red_dark"/>-->
+    <!---->
+    <!--<View-->
+    <!--android:id="@+id/divider11"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="75dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:layout_marginLeft="4dp"-->
+    <!--app:layout_constraintWidth_default="percent"-->
+    <!--app:layout_constraintWidth_percent="0.5"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/divider9"-->
+    <!--android:padding="8dp"-->
+    <!--android:background="@android:color/holo_green_dark"/>-->
+
+
+</android.support.constraint.ConstraintLayout>

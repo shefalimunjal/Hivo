@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+        android:id="@+id/enter_location"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Enter Location"
+        android:focusedByDefault="false"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@id/divider1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        app:pacv_googleMapsApiKey="AIzaSyCW6UTTXPDezrtFn4FTDaMkhnNtbUMYKxU"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/enter_location"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/list_map_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/property_details_rv"
+            class="android.support.v7.app.AlertController$RecycleListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusedByDefault="true"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/list_map_iv"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="4dp"
+        app:srcCompat="@drawable/map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list_map_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/list_map_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Map"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/list_map_iv"
+        app:layout_constraintLeft_toRightOf="@+id/list_map_iv"/>
+
+    <ImageView
+        android:id="@+id/list_sort_iv"
+        android:layout_width="45dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/sort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list_sort_tv" />
+
+    <TextView
+        android:id="@+id/list_sort_tv"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="64dp"
+        android:gravity="center"
+        android:text="Sort"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/list_filter_iv"
+        app:layout_constraintTop_toTopOf="@+id/list_sort_iv"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/list_filter_iv"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:srcCompat ="@drawable/filter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list_filter_tv"
+        app:layout_constraintTop_toBottomOf="@+id/refresh_layout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/list_filter_tv"
+        android:layout_width="38dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Filter"
+        android:clickable="true"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/list_filter_iv"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
